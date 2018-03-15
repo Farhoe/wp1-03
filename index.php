@@ -2,20 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>3. práce</title>
+    <title>xd</title>
   </head>
   <body>
-    <h1>Obvod kruhu</h1>
- 
-    <?php
-    define('PI',3.14);
-    $polomer=5;
-    $obvod="2*3.14*$polomer"
-     ?>
-
-     <?php
-     echo "O = 2 . PI . r =" "O = 2 ." . PI . "*$polomer = $obvod";
-      ?>
-
+    <h1>Proměné</h1>
+<?php
+    define("PI", 3.14) ;
+    $r=5 ;
+    $S= PI*$r*$r;
+    $obvod=  2*PI*$r;
+ ?>
+ <p> Poloměr : <?php echo $r  ?> </p>
+ <p> Obsah kruhu : <?php echo "S = PI * r * r =  " . PI . " * $r * $r ="  ?> <?php echo $S ?> </p>
+ <p> Obvod kruhu : O = <?php echo "2 * PI * r =  2 * " . PI . " * $r " ?> = <?php echo $obvod ?></p>
   </body>
 </html>
